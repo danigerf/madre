@@ -1,0 +1,47 @@
+body{font-family: "IBM Plex Serif", serif;}
+
+h1 {
+
+    font-weight: 500;
+    font-style: normal;
+    display: inline-block;
+    font-size: 5rem;
+}
+
+h1::after {
+  content: '';
+  display: inline-block;
+  width: 0.05em; /* Largura do cursor */
+  height: 1em; /* Altura do cursor relativa à fonte do h1 */
+  background-color: currentColor; /* Herda a cor do texto do h1 */
+  margin-left: 4px; /* Espaçamento entre a palavra e o cursor */
+  vertical-align: text-bottom;
+
+  /* Animação de 1 segundo em loop infinito.
+     'step-end' garante a transição abrupta em vez de esmaecimento suave */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+h2{
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.sub-titulo{
+
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.8rem;
+}

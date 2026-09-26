@@ -2,14 +2,15 @@
 <html lang="en">
     {%include head.html%}
     <title>{{page.title}}</title>
-  <body class="container">
+  <body class="d-flex flex-column min-vh-100">
+      {%include navbar.html%}
+      <div class="container flex-grow-1">
 
       {{ content }}
-
-
-
+      </div>
+      {%include rodape.html%}
     <footer>
-{%include foot.html%}
+        {%include foot.html%}
     </footer>
   </body>
 </html>

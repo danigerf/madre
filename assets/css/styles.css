@@ -27,7 +27,7 @@ h2 {
     font-weight: 100;
     font-style: normal;
     /* Mínimo de 1.2rem, ideal de 5% da largura da tela, máximo de 1.8rem */
-    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     text-align: center; /* Mantém a simetria caso haja quebra em telas extremamente estreitas */
 }
 
